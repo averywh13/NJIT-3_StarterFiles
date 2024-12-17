@@ -16,7 +16,13 @@
 
 	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
 	<script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
 
 </head>
 
@@ -25,7 +31,7 @@
 
 		<div class="header">
 
-			<div class="container">
+			<div class="container text-center">
 				<h1 id="app_title">{{title}}</h1>
 			</div>
 
@@ -43,13 +49,13 @@
 
 						<p class="title">{{movies[index].title }} {{movies[index].country }} </p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore }} </p>
-						<p class="runtime">Runtime: {{ timeText(movies[index].runtime) }}</p>
-						<p class="released">Released: {{getMonthText(movies[index].released) }} | Rated: {{movies[index].rating }} </p>
-						<p class="websites">Websites: <a> {{movies[index].imdb}} </a> | <a>{{movies[index].website}}</a></p>
+						<p class="runtime text-white">Runtime: {{ timeText(movies[index].runtime) }}</p>
+						<p class="released text-white">Released: {{getMonthText(movies[index].released) }} | Rated: {{movies[index].rating }} </p>
+						<p class="websites text-white">Websites: <a> {{movies[index].imdb}} </a> | <a>{{movies[index].website}}</a></p>
 
 						<div class="social">
-							<p class="likes" @click="movie.likes++"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[index].likes }}</p>
-							<p class="dislikes" @click="movie.dislikes++"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes }}</p>
+							<p class="likes text-white" @click="movie.likes++"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[index].likes }}</p>
+							<p class="dislikes text-white" @click="movie.dislikes++"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes }}</p>
 						  </div>
 					</div>
 				</div>

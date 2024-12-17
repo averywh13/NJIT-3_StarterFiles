@@ -5,7 +5,7 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background-color: black;
 }
 
 /* This stylizes the header area */
@@ -14,13 +14,20 @@ body {
 }
 .header h1 {
     display: inline-block;
-    color: white;
+    color: rgb(255, 208, 0);
+    font-family: "New Rocker", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
 }
 
 /* This stylizes the main page area */
 .main {
-    background-color: #f2f2f2;
+    background-color: #472506;
     padding: 40px 0;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* This stylizes the poster area and poster images */
@@ -30,18 +37,18 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 0;
-    background-color:#dddddd;
+    background-image:url('img/stainedpaper2.jpg');
 }
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 5px;
-    border: 2px dashed black;
+    border: 2px dashed rgb(255, 255, 255);
 }
 
 /* This stylizes your "Poster X of Y" text */
 .imageInfo {
-	color: #959595;
+	color: #ffffff;
 	font-style: italic;
 	font-size: x-small;
 	float: right;
@@ -51,21 +58,28 @@ body {
 /* This stylizes your Title and Rating Text */
 .title,
 .released {
-    color: #444;
+    color: #ffffff;
     margin: 0;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 25px;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .released,
 .rated {
-    color: #5d5d5d;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 18px;
     font-weight: 200;
+    font-family: "Quintessential", serif;
+    font-style: normal;
 }
-
+/* website text */
+.websites{
+    font-size: 15.5px;
+}
 /* This shapes your IMDB score area */
 .score {
-    background-color: #39D1B4;
+    background-color: #915900;
     color: #fff;
     font-size: 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -105,6 +119,7 @@ body {
     font-weight: 200;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: 500ms;
+    background-color: rgb(165, 93, 42);
 }
 
 /* This makes sure your Github Button is centered */
